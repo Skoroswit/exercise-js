@@ -1,3 +1,4 @@
+/* encoding="UTF-8" */
 var entry = document.getElementById('entry'),
     change1 = document.getElementsByName('change'),
     firstname = document.getElementById('firstname');
@@ -18,7 +19,7 @@ function test1() {
     };
 };
 function test2() {
-    var pattern = new RegExp(/^(?=.*?[A-Za-z])[A-Za-z+]+$/),
+    var pattern = new RegExp(/^(?=.*?[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ])[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ+]+$/),
         check = firstname.value;
     if(!pattern.test(check)){
         firstname.value="";
