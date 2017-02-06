@@ -10,7 +10,7 @@ function test1() {
     if (entry.value == "") {
         entry.value = 0;
     }
-    else if (error === true || check == null) {
+    else if (error == true || check == null) {
         entry.value = 0;
         alert("Please enter numbers.");
     }
